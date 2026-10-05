@@ -1,0 +1,19 @@
+language: hindi
+wiki_code: hi              # dumps.wikimedia.org/hiwiki
+tesseract_lang: hin        # tesseract OCR language pack
+hf_dataset_configs:        # public corpora pulled via `datasets` library (source_type=downloaded)
+  - name: ai4bharat/IndicCorpV2
+    lang_field_value: hin_Deva
+  - name: oscar-corpus/OSCAR-2301
+    lang: hi
+target_total_tokens: 500_000_000
+min_manual_fraction: 0.20
+min_devanagari_fraction: 0.6   # for common.text_cleaning.filter_script
+split_ratios:
+  train: 0.98
+  val: 0.01
+  test: 0.01
+tokenizer:
+  model_type: bpe            # bpe | unigram
+  vocab_size: 8000
+random_seed: 42

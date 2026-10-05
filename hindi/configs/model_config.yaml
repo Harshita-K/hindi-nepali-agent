@@ -1,0 +1,13 @@
+# Model H (Hindi) architecture config -- decoder-only Transformer, ~25M params.
+# Positional scheme: learned absolute positional embeddings (see
+# common/model/transformer.py docstring) -- this caps the model at
+# max_seq_len tokens; longer inputs must be truncated.
+vocab_size: 8000        # must match hindi/tokenizer/vocab/hindi_spm.model
+d_model: 512
+n_layers: 7
+n_heads: 8
+ffn_dim: 2048            # 4x d_model, GELU activation
+max_seq_len: 512
+dropout: 0.1
+tie_embeddings: true     # output head reuses the token embedding matrix
+pad_id: 0

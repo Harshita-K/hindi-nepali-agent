@@ -1,0 +1,34 @@
+{
+  "hindi": {
+    "config_path": "hindi/configs/model_config.yaml",
+    "config": {
+      "vocab_size": 8000,
+      "d_model": 512,
+      "n_layers": 7,
+      "n_heads": 8,
+      "ffn_dim": 2048,
+      "max_seq_len": 512,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "pad_id": 0
+    },
+    "total_parameters": 26425856,
+    "non_embedding_parameters": 26163712
+  },
+  "nepali": {
+    "config_path": "nepali/configs/model_config.yaml",
+    "config": {
+      "vocab_size": 8000,
+      "d_model": 512,
+      "n_layers": 7,
+      "n_heads": 8,
+      "ffn_dim": 2048,
+      "max_seq_len": 512,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "pad_id": 0
+    },
+    "total_parameters": 26425856,
+    "non_embedding_parameters": 26163712
+  }
+}

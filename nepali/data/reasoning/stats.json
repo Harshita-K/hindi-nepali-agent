@@ -1,0 +1,71 @@
+{
+  "train": {
+    "n_examples": 6000,
+    "by_task_type": {
+      "direct": 2024,
+      "transitive": 1991,
+      "multihop": 1985
+    },
+    "by_attribute": {
+      "age": 1515,
+      "quantity": 1495,
+      "height": 1519,
+      "price": 1471
+    }
+  },
+  "val": {
+    "n_examples": 800,
+    "by_task_type": {
+      "direct": 277,
+      "multihop": 265,
+      "transitive": 258
+    },
+    "by_attribute": {
+      "age": 216,
+      "price": 199,
+      "height": 189,
+      "quantity": 196
+    }
+  },
+  "test": {
+    "n_examples": 800,
+    "by_task_type": {
+      "direct": 368,
+      "transitive": 227,
+      "multihop": 205
+    },
+    "by_attribute": {
+      "height": 263,
+      "age": 260,
+      "quantity": 121,
+      "price": 156
+    }
+  },
+  "held_out_person_names_test_only": [
+    "सीता",
+    "विकास",
+    "मनोज",
+    "कृष्णा",
+    "सुनिता",
+    "राम"
+  ],
+  "held_out_object_names_test_only": [
+    "कलम",
+    "पङ्खा",
+    "चश्मा"
+  ],
+  "template_counts": {
+    "direct": {
+      "train": 3,
+      "test": 1
+    },
+    "transitive": {
+      "train": 2,
+      "test": 1
+    },
+    "multihop": {
+      "train": 2,
+      "test": 1
+    }
+  }
+}

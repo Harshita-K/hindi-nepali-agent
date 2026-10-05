@@ -1,0 +1,19 @@
+# One article URL per line. Lines starting with # are ignored.
+#
+# Sources are restricted to sites whose robots.txt does not explicitly
+# disallow ClaudeBot / anthropic-ai / Claude-Web -- bbc.com (covers
+# bbc.com/nepali too) and nepalpress.com both name Anthropic's crawlers
+# explicitly as disallowed, so they are excluded here even though this
+# custom scraper's user-agent isn't literally "ClaudeBot".
+#
+# Compliant sources used by discover_urls.py:
+#   https://www.onlinekhabar.com/  (robots.txt: User-agent: * only, no bot-specific rules)
+#   https://www.setopati.com/      (robots.txt: only /login /cms /preview /mail blocked)
+#   https://ne.wikisource.org/     (permissive; public-domain Nepali books/essays)
+# Populated automatically by discover_urls.py -- run it rather than editing by hand.
+
+https://www.setopati.com/politics/396007
+https://www.setopati.com/politics/396005
+https://www.setopati.com/global/europe/396000
+https://www.setopati.com/sports/football/396004
+https://www.setopati.com/politics/396003

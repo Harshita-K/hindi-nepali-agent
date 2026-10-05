@@ -1,0 +1,144 @@
+{
+  "mode": "free_generation",
+  "temperature": 1.0,
+  "seed": 42,
+  "pretrained": {
+    "overall_accuracy": 0.0,
+    "n_examples": 800,
+    "accuracy_by_task_type": {
+      "direct": 0.0,
+      "transitive": 0.0,
+      "multihop": 0.0
+    },
+    "accuracy_by_attribute": {
+      "height": 0.0,
+      "age": 0.0,
+      "quantity": 0.0,
+      "price": 0.0
+    }
+  },
+  "finetuned": {
+    "overall_accuracy": 0.0725,
+    "n_examples": 800,
+    "accuracy_by_task_type": {
+      "direct": 0.07336956521739131,
+      "transitive": 0.048458149779735685,
+      "multihop": 0.0975609756097561
+    },
+    "accuracy_by_attribute": {
+      "height": 0.06844106463878327,
+      "age": 0.08076923076923077,
+      "quantity": 0.04132231404958678,
+      "price": 0.08974358974358974
+    }
+  },
+  "examples_finetuning_fixed": [
+    {
+      "prompt": "थाहा छ कि कलमको मूल्य, चश्माको मूल्य भन्दा बढी छ, र चश्माको मूल्य, पङ्खाको मूल्य भन्दा बढी छ। यीमध्ये सबैभन्दा कम मूल्य कसको हो, भन्नुहोस्। जवाफ:",
+      "answer": "पङ्खा",
+      "pretrained_predicted": "महिनौं पहिले \"२० अद्",
+      "finetuned_predicted": "पङ्खा",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "यदि विकासको उमेर 23 वर्ष छ र सीताको उमेर 23 वर्ष छ भने, कसको उमेर बढी होला? जवाफ:",
+      "answer": "दुवै बराबर छन्",
+      "pretrained_predicted": "जसरी अक्सर आफ्नो उत्पादनको गणना को",
+      "finetuned_predicted": "दुवै बराबर छन्",
+      "task_type": "direct"
+    },
+    {
+      "prompt": "सुनिताको उमेर, रामको उमेर भन्दा बढी छ। रामको उमेर, कृष्णाको उमेर भन्दा बढी छ। सुनिता र कृष्णा मध्ये कसको उमेर कम छ? जवाफ:",
+      "answer": "कृष्णा",
+      "pretrained_predicted": "- \" स्थानीय युवा पुस्ताका लगभग सबै",
+      "finetuned_predicted": "कृष्णा",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "सीताको उचाइ, मनोजको उचाइ भन्दा बढी छ। मनोजको उचाइ, कृष्णाको उचाइ भन्दा बढी छ। सीता र कृष्णा मध्ये कसको उचाइ कम छ? जवाफ:",
+      "answer": "कृष्णा",
+      "pretrained_predicted": "वाक नवजात सफल डिजाइन सबैभन्दा नृत्य",
+      "finetuned_predicted": "कृष्णा",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "रामको उमेर, मनोजको उमेर भन्दा बढी छ। मनोजको उमेर, सीताको उमेर भन्दा बढी छ। राम र सीता मध्ये कसको उमेर बढी छ? जवाफ:",
+      "answer": "राम",
+      "pretrained_predicted": "वैवाहिक उमेर सामान्यतया तपाईंको उमेर अनुसार",
+      "finetuned_predicted": "राम",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "थाहा छ कि कृष्णाको उचाइ, रामको उचाइ भन्दा बढी छ, र रामको उचाइ, सीताको उचाइ भन्दा बढी छ। यीमध्ये सबैभन्दा कम उचाइ कसको हो, भन्नुहोस्। जवाफ:",
+      "answer": "सीता",
+      "pretrained_predicted": "मैले रुसी अमेरिकी सहयोगीहरूलाई डराउन",
+      "finetuned_predicted": "सीता",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "चश्माको मात्रा, पङ्खाको मात्रा भन्दा बढी छ। पङ्खाको मात्रा, कलमको मात्रा भन्दा बढी छ। चश्मा र कलम मध्ये कसको मात्रा कम छ? जवाफ:",
+      "answer": "कलम",
+      "pretrained_predicted": "कुनामा चश्मा, को चश्मा",
+      "finetuned_predicted": "कलम",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "थाहा छ कि मनोजको उचाइ, विकासको उचाइ भन्दा बढी छ, र विकासको उचाइ, सीताको उचाइ भन्दा बढी छ। यीमध्ये सबैभन्दा कम उचाइ कसको हो, भन्नुहोस्। जवाफ:",
+      "answer": "सीता",
+      "pretrained_predicted": "संकटको भरिएको छुट्टी झिक्ने",
+      "finetuned_predicted": "सीता",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "थाहा छ कि कृष्णाको उचाइ, विकासको उचाइ भन्दा बढी छ, र विकासको उचाइ, सीताको उचाइ भन्दा बढी छ। यीमध्ये सबैभन्दा कम उचाइ कसको हो, भन्नुहोस्। जवाफ:",
+      "answer": "सीता",
+      "pretrained_predicted": "चलचित्र \" \"सम्पत्ती मेरो बनाउन\"",
+      "finetuned_predicted": "सीता",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "यदि चश्माको मात्रा 42 छ र पङ्खाको मात्रा 42 छ भने, कसको मात्रा कम होला? जवाफ:",
+      "answer": "दुवै बराबर छन्",
+      "pretrained_predicted": "बारे  ⁇  घण्टा अगाडीको अनियन्त्र",
+      "finetuned_predicted": "दुवै बराबर छन्",
+      "task_type": "direct"
+    }
+  ],
+  "examples_still_wrong_after_finetuning": [
+    {
+      "prompt": "यदि मनोजको उचाइ 160 सेन्टिमिटर छ र सुनिताको उचाइ 108 सेन्टिमिटर छ भने, कसको उचाइ कम होला? जवाफ:",
+      "answer": "सुनिता",
+      "pretrained_predicted": "यो आकार  ⁇  सेन्टिमिटर",
+      "finetuned_predicted": "सुनिल",
+      "task_type": "direct"
+    },
+    {
+      "prompt": "थाहा छ कि विकासको उचाइ, कृष्णाको उचाइ भन्दा बढी छ, र कृष्णाको उचाइ, सुनिताको उचाइ भन्दा बढी छ। यीमध्ये सबैभन्दा बढी उचाइ कसको हो, भन्नुहोस्। जवाफ:",
+      "answer": "विकास",
+      "pretrained_predicted": "कक्षालाई दिक्क लाग्छ कि सेक्स",
+      "finetuned_predicted": "बढी",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "रामको उमेर, सीताको उमेर भन्दा कम छ। सीताको उमेर, विकासको उमेर भन्दा कम छ। राम र विकास मध्ये कसको उमेर बढी छ? जवाफ:",
+      "answer": "विकास",
+      "pretrained_predicted": "यस तथ्यलाई उत्तर पश्चिममा भारत र",
+      "finetuned_predicted": "विजय",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "पङ्खाको मात्रा, चश्माको मात्रा भन्दा बढी छ। चश्माको मात्रा, कलमको मात्रा भन्दा बढी छ। पङ्खा र कलम मध्ये कसको मात्रा बढी छ? जवाफ:",
+      "answer": "पङ्खा",
+      "pretrained_predicted": "आर मेनुः यो माछा पङ्",
+      "finetuned_predicted": "सेता",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "पङ्खाको मूल्य, चश्माको मूल्य भन्दा कम छ। चश्माको मूल्य, कलमको मूल्य भन्दा कम छ। पङ्खा र कलम मध्ये कसको मूल्य कम छ? जवाफ:",
+      "answer": "पङ्खा",
+      "pretrained_predicted": "पङ्खा विक्रेता रुचि।",
+      "finetuned_predicted": "दुवै बराबर छन्",
+      "task_type": "multihop"
+    }
+  ]
+}

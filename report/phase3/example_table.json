@@ -1,0 +1,62 @@
+[
+  {
+    "prompt": "राम की उम्र, सीता की उम्र से कम है। सीता की उम्र, सुरेश की उम्र से कम है। राम और सुरेश में से किसकी उम्र ज़्यादा है? उत्तर:",
+    "answer": "सुरेश",
+    "pretrained_predicted": "राम की उम्र, राम की उम्र,",
+    "finetuned_predicted": "सुरेश",
+    "task_type": "multihop",
+    "outcome": "fixed_by_finetuning",
+    "language": "hindi",
+    "lang_label": "Model H (Hindi)"
+  },
+  {
+    "prompt": "पता है कि राम की ऊँचाई, विकास की ऊँचाई से कम है, और विकास की ऊँचाई, सीता की ऊँचाई से कम है। इनमें सबसे कम ऊँचाई किसकी है, बताइए। उत्तर:",
+    "answer": "राम",
+    "pretrained_predicted": "- \"अब तक, राम की",
+    "finetuned_predicted": "राम",
+    "task_type": "transitive",
+    "outcome": "fixed_by_finetuning",
+    "language": "hindi",
+    "lang_label": "Model H (Hindi)"
+  },
+  {
+    "prompt": "अगर विकास की ऊँचाई 160 सेंटीमीटर हो और सुनीता की ऊँचाई 108 सेंटीमीटर हो, तो किसकी ऊँचाई कम होगी? उत्तर:",
+    "answer": "सुनीता",
+    "pretrained_predicted": "-पश्चिमी भाग में, यह एक",
+    "finetuned_predicted": "दोनों बराबर हैं",
+    "task_type": "direct",
+    "outcome": "still_wrong_after_finetuning",
+    "language": "hindi",
+    "lang_label": "Model H (Hindi)"
+  },
+  {
+    "prompt": "चश्माको मूल्य, कलमको मूल्य भन्दा कम छ। कलमको मूल्य, पङ्खाको मूल्य भन्दा कम छ। चश्मा र पङ्खा मध्ये कसको मूल्य बढी छ? जवाफ:",
+    "answer": "पङ्खा",
+    "pretrained_predicted": "\"अनलाइन\" को मूल्य,",
+    "finetuned_predicted": "पङ्खा",
+    "task_type": "multihop",
+    "outcome": "fixed_by_finetuning",
+    "language": "nepali",
+    "lang_label": "Model L (Nepali)"
+  },
+  {
+    "prompt": "यदि विकासको उमेर 23 वर्ष छ र सीताको उमेर 23 वर्ष छ भने, कसको उमेर बढी होला? जवाफ:",
+    "answer": "दुवै बराबर छन्",
+    "pretrained_predicted": "",
+    "finetuned_predicted": "दुवै बराबर छन्",
+    "task_type": "direct",
+    "outcome": "fixed_by_finetuning",
+    "language": "nepali",
+    "lang_label": "Model L (Nepali)"
+  },
+  {
+    "prompt": "यदि मनोजको उचाइ 160 सेन्टिमिटर छ र सुनिताको उचाइ 108 सेन्टिमिटर छ भने, कसको उचाइ कम होला? जवाफ:",
+    "answer": "सुनिता",
+    "pretrained_predicted": "",
+    "finetuned_predicted": "सुनिल",
+    "task_type": "direct",
+    "outcome": "still_wrong_after_finetuning",
+    "language": "nepali",
+    "lang_label": "Model L (Nepali)"
+  }
+]

@@ -1,0 +1,13 @@
+\begin{table}[H]\centering
+\caption{Example prompts: pretrained vs.\ finetuned predictions (real model outputs)}
+\small
+\begin{tabular}{p{1.3cm}p{1cm}p{5.2cm}p{1.6cm}p{2.6cm}p{1.6cm}}\toprule
+Lang.\ & Task & Prompt & Answer & Pretrained pred. & Finetuned pred.\\\midrule
+Model H (Hindi) & Multihop & राम की उम्र, सीता की उम्र से कम है। सीता की उम्र, सुरेश की उम्र से कम है। राम और सुरेश में से किसकी उम्र ज़्यादा है? उत्तर: & सुरेश & राम की उम्र, राम की उम्र, & \textbf{सुरेश}\\
+Model H (Hindi) & Transitive & पता है कि राम की ऊँचाई, विकास की ऊँचाई से कम है, और विकास की ऊँचाई, सीता की ऊँचाई से कम है। इनमें सबसे कम ऊँचाई किसकी है, बताइए। उत्तर: & राम & - "अब तक, राम की & \textbf{राम}\\
+Model H (Hindi) & Direct & अगर विकास की ऊँचाई 160 सेंटीमीटर हो और सुनीता की ऊँचाई 108 सेंटीमीटर हो, तो किसकी ऊँचाई कम होगी? उत्तर: & सुनीता & -पश्चिमी भाग में, यह एक & दोनों बराबर हैं\\
+Model L (Nepali) & Multihop & चश्माको मूल्य, कलमको मूल्य भन्दा कम छ। कलमको मूल्य, पङ्खाको मूल्य भन्दा कम छ। चश्मा र पङ्खा मध्ये कसको मूल्य बढी छ? जवाफ: & पङ्खा & "अनलाइन" को मूल्य, & \textbf{पङ्खा}\\
+Model L (Nepali) & Direct & यदि विकासको उमेर 23 वर्ष छ र सीताको उमेर 23 वर्ष छ भने, कसको उमेर बढी होला? जवाफ: & दुवै बराबर छन् & \textit{(empty)} & \textbf{दुवै बराबर छन्}\\
+Model L (Nepali) & Direct & यदि मनोजको उचाइ 160 सेन्टिमिटर छ र सुनिताको उचाइ 108 सेन्टिमिटर छ भने, कसको उचाइ कम होला? जवाफ: & सुनिता & \textit{(empty)} & सुनिल\\
+\bottomrule\end{tabular}
+\end{table}

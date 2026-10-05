@@ -1,0 +1,38 @@
+# --- scraping / downloading ---
+requests
+beautifulsoup4
+trafilatura
+feedparser          # RSS feed parsing, for discovering article URLs automatically
+wikiextractor
+datasets            # HF datasets library only, for pulling IndicCorp/OSCAR/CC100 (NOT transformers/models)
+
+# --- PDF / OCR (manual collection) ---
+pdfplumber
+PyMuPDF
+pytesseract
+pdf2image
+
+# --- cleaning / normalization ---
+ftfy
+langdetect
+indic-nlp-library
+
+# --- tokenizer ---
+sentencepiece
+
+# --- model / training (Phase 2) ---
+torch                # Colab ships a matching CUDA build preinstalled; this pin is for local dev/smoke-testing only
+
+# --- evaluation (Phase 2.3: generation metrics) ---
+sacrebleu            # BLEU-4, chrF++
+rouge-score          # ROUGE-L
+
+# --- stats / reporting ---
+pandas
+matplotlib
+seaborn
+tqdm
+pyyaml
+
+# --- misc ---
+gdown                # for pushing/pulling large artifacts to Google Drive

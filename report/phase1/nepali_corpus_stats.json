@@ -1,0 +1,144 @@
+{
+  "language": "nepali",
+  "splits": {
+    "train": {
+      "total_docs": 1855143,
+      "total_chars": 3163014527,
+      "total_whitespace_tokens": 489459715,
+      "docs_by_source_type": {
+        "downloaded": 1552933,
+        "manual": 302210
+      },
+      "whitespace_tokens_by_source_type": {
+        "downloaded": 392107720,
+        "manual": 97351995
+      },
+      "docs_by_source": {
+        "sangraha": 475609,
+        "fineweb2": 638814,
+        "indiccorp": 399996,
+        "reportersnepal_manual": 27748,
+        "bizmandu_manual": 18719,
+        "setopati_manual": 22896,
+        "dcnepal_manual": 98669,
+        "kaggle_nepali_wikipedia": 11948,
+        "onlinekhabar_manual": 39761,
+        "ekantipur_manual": 35684,
+        "rajdhani_manual": 20921,
+        "ne_wikipedia": 18480,
+        "khabarhub_manual": 12453,
+        "nepalpage_manual": 24132,
+        "kaggle_nepali_news_20cat": 4057,
+        "nagarik_github": 3443,
+        "ratopati_manual": 1184,
+        "sports_news_nepali_github": 586,
+        "archive_org_nep": 43
+      },
+      "manual_token_fraction": 0.1989
+    },
+    "val": {
+      "total_docs": 18930,
+      "total_chars": 31368463,
+      "total_whitespace_tokens": 4853471,
+      "docs_by_source_type": {
+        "downloaded": 15822,
+        "manual": 3108
+      },
+      "whitespace_tokens_by_source_type": {
+        "downloaded": 3953929,
+        "manual": 899542
+      },
+      "docs_by_source": {
+        "fineweb2": 6522,
+        "sangraha": 4824,
+        "indiccorp": 4067,
+        "dcnepal_manual": 1020,
+        "rajdhani_manual": 211,
+        "onlinekhabar_manual": 396,
+        "setopati_manual": 241,
+        "bizmandu_manual": 207,
+        "nepalpage_manual": 249,
+        "ekantipur_manual": 359,
+        "kaggle_nepali_wikipedia": 122,
+        "reportersnepal_manual": 288,
+        "ne_wikipedia": 194,
+        "khabarhub_manual": 126,
+        "sports_news_nepali_github": 8,
+        "kaggle_nepali_news_20cat": 43,
+        "nagarik_github": 42,
+        "ratopati_manual": 11
+      },
+      "manual_token_fraction": 0.1853
+    },
+    "test": {
+      "total_docs": 18931,
+      "total_chars": 32175002,
+      "total_whitespace_tokens": 4989415,
+      "docs_by_source_type": {
+        "downloaded": 15817,
+        "manual": 3114
+      },
+      "whitespace_tokens_by_source_type": {
+        "downloaded": 3938351,
+        "manual": 1051064
+      },
+      "docs_by_source": {
+        "indiccorp": 4054,
+        "dcnepal_manual": 1032,
+        "fineweb2": 6504,
+        "reportersnepal_manual": 271,
+        "onlinekhabar_manual": 406,
+        "sangraha": 4868,
+        "nepalpage_manual": 250,
+        "ne_wikipedia": 209,
+        "rajdhani_manual": 206,
+        "ekantipur_manual": 381,
+        "kaggle_nepali_wikipedia": 110,
+        "setopati_manual": 230,
+        "bizmandu_manual": 179,
+        "nagarik_github": 27,
+        "khabarhub_manual": 143,
+        "kaggle_nepali_news_20cat": 38,
+        "sports_news_nepali_github": 7,
+        "ratopati_manual": 14,
+        "archive_org_nep": 2
+      },
+      "manual_token_fraction": 0.2107
+    }
+  },
+  "overall": {
+    "total_docs": 1893004,
+    "total_chars": 3226557992,
+    "total_whitespace_tokens": 499302601,
+    "docs_by_source_type": {
+      "downloaded": 1584572,
+      "manual": 308432
+    },
+    "whitespace_tokens_by_source_type": {
+      "downloaded": 400000000,
+      "manual": 99302601
+    },
+    "docs_by_source": {
+      "sangraha": 485301,
+      "fineweb2": 651840,
+      "indiccorp": 408117,
+      "reportersnepal_manual": 28307,
+      "bizmandu_manual": 19105,
+      "setopati_manual": 23367,
+      "dcnepal_manual": 100721,
+      "kaggle_nepali_wikipedia": 12180,
+      "onlinekhabar_manual": 40563,
+      "ekantipur_manual": 36424,
+      "rajdhani_manual": 21338,
+      "ne_wikipedia": 18883,
+      "khabarhub_manual": 12722,
+      "nepalpage_manual": 24631,
+      "kaggle_nepali_news_20cat": 4138,
+      "nagarik_github": 3512,
+      "ratopati_manual": 1209,
+      "sports_news_nepali_github": 601,
+      "archive_org_nep": 45
+    },
+    "manual_token_fraction": 0.1989
+  }
+}

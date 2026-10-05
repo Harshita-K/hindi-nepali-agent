@@ -1,0 +1,71 @@
+{
+  "language": "hindi",
+  "model_type": "bpe",
+  "d_model": 512,
+  "n_val_docs": 2000,
+  "max_train_docs": 150000,
+  "sampling": "systematic (every-Nth-line)",
+  "chosen_vocab_size": 8000,
+  "sweep": [
+    {
+      "vocab_size": 2000,
+      "fertility_tokens_per_word": 1.7747,
+      "avg_chars_per_token": 2.863,
+      "unknown_token_rate_pct": 0.2178,
+      "vocab_pieces_used_fraction": 0.997,
+      "tokens_to_encode_fixed_val_sample": 1234809,
+      "embedding_table_params": 1024000,
+      "embedding_pct_of_25M_budget": 4.1
+    },
+    {
+      "vocab_size": 4000,
+      "fertility_tokens_per_word": 1.5455,
+      "avg_chars_per_token": 3.287,
+      "unknown_token_rate_pct": 0.2501,
+      "vocab_pieces_used_fraction": 0.993,
+      "tokens_to_encode_fixed_val_sample": 1075379,
+      "embedding_table_params": 2048000,
+      "embedding_pct_of_25M_budget": 8.19
+    },
+    {
+      "vocab_size": 8000,
+      "fertility_tokens_per_word": 1.3795,
+      "avg_chars_per_token": 3.683,
+      "unknown_token_rate_pct": 0.2801,
+      "vocab_pieces_used_fraction": 0.9839,
+      "tokens_to_encode_fixed_val_sample": 959878,
+      "embedding_table_params": 4096000,
+      "embedding_pct_of_25M_budget": 16.38
+    },
+    {
+      "vocab_size": 16000,
+      "fertility_tokens_per_word": 1.2667,
+      "avg_chars_per_token": 4.011,
+      "unknown_token_rate_pct": 0.3051,
+      "vocab_pieces_used_fraction": 0.9505,
+      "tokens_to_encode_fixed_val_sample": 881344,
+      "embedding_table_params": 8192000,
+      "embedding_pct_of_25M_budget": 32.77
+    },
+    {
+      "vocab_size": 24000,
+      "fertility_tokens_per_word": 1.2219,
+      "avg_chars_per_token": 4.158,
+      "unknown_token_rate_pct": 0.3163,
+      "vocab_pieces_used_fraction": 0.8937,
+      "tokens_to_encode_fixed_val_sample": 850160,
+      "embedding_table_params": 12288000,
+      "embedding_pct_of_25M_budget": 49.15
+    },
+    {
+      "vocab_size": 32000,
+      "fertility_tokens_per_word": 1.1988,
+      "avg_chars_per_token": 4.238,
+      "unknown_token_rate_pct": 0.3224,
+      "vocab_pieces_used_fraction": 0.8227,
+      "tokens_to_encode_fixed_val_sample": 834141,
+      "embedding_table_params": 16384000,
+      "embedding_pct_of_25M_budget": 65.54
+    }
+  ]
+}

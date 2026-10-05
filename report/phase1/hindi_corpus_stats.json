@@ -1,0 +1,103 @@
+{
+  "language": "hindi",
+  "splits": {
+    "train": {
+      "total_docs": 1340887,
+      "total_chars": 2482885881,
+      "total_whitespace_tokens": 490233182,
+      "docs_by_source_type": {
+        "downloaded": 1147311,
+        "manual": 193576
+      },
+      "whitespace_tokens_by_source_type": {
+        "downloaded": 390657323,
+        "manual": 99575859
+      },
+      "docs_by_source": {
+        "indiccorp": 387588,
+        "fineweb2": 457813,
+        "sangraha": 224529,
+        "hi_wikipedia": 77381,
+        "indiatv_manual": 70957,
+        "patrika_manual": 97282,
+        "hi_wikisource": 4190,
+        "abplive_manual": 21105,
+        "archive_org_hin": 42
+      },
+      "manual_token_fraction": 0.2031
+    },
+    "val": {
+      "total_docs": 13682,
+      "total_chars": 24828355,
+      "total_whitespace_tokens": 4907064,
+      "docs_by_source_type": {
+        "downloaded": 11691,
+        "manual": 1991
+      },
+      "whitespace_tokens_by_source_type": {
+        "downloaded": 3945727,
+        "manual": 961337
+      },
+      "docs_by_source": {
+        "fineweb2": 4605,
+        "patrika_manual": 980,
+        "indiccorp": 3997,
+        "sangraha": 2283,
+        "indiatv_manual": 719,
+        "abplive_manual": 253,
+        "hi_wikipedia": 806,
+        "hi_wikisource": 39
+      },
+      "manual_token_fraction": 0.1959
+    },
+    "test": {
+      "total_docs": 13684,
+      "total_chars": 24577739,
+      "total_whitespace_tokens": 4859751,
+      "docs_by_source_type": {
+        "downloaded": 11756,
+        "manual": 1928
+      },
+      "whitespace_tokens_by_source_type": {
+        "downloaded": 3946073,
+        "manual": 913678
+      },
+      "docs_by_source": {
+        "indiccorp": 4050,
+        "fineweb2": 4601,
+        "abplive_manual": 207,
+        "patrika_manual": 966,
+        "hi_wikipedia": 841,
+        "sangraha": 2264,
+        "indiatv_manual": 717,
+        "hi_wikisource": 38
+      },
+      "manual_token_fraction": 0.188
+    }
+  },
+  "overall": {
+    "total_docs": 1368253,
+    "total_chars": 2532291975,
+    "total_whitespace_tokens": 499999997,
+    "docs_by_source_type": {
+      "downloaded": 1170758,
+      "manual": 197495
+    },
+    "whitespace_tokens_by_source_type": {
+      "downloaded": 398549123,
+      "manual": 101450874
+    },
+    "docs_by_source": {
+      "indiccorp": 395635,
+      "fineweb2": 467019,
+      "sangraha": 229076,
+      "hi_wikipedia": 79028,
+      "indiatv_manual": 72393,
+      "patrika_manual": 99228,
+      "hi_wikisource": 4267,
+      "abplive_manual": 21565,
+      "archive_org_hin": 42
+    },
+    "manual_token_fraction": 0.2029
+  }
+}

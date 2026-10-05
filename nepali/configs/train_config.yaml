@@ -1,0 +1,23 @@
+# Pretraining config for Model L (Nepali). Deliberately identical
+# hyperparameters to Model H (see nepali/configs/model_config.yaml) so the
+# Phase 2.3 H-vs-L comparison isolates the effect of data/resource level.
+# Effective tokens per optimizer step = batch_size * grad_accum_steps * block_size
+#   = 32 * 4 * 512 = 65,536 tokens/step
+# max_steps=8000 -> ~524M tokens, hitting the ~500M-token target.
+batch_size: 32
+grad_accum_steps: 4
+block_size: 512
+max_steps: 8000
+warmup_steps: 200
+lr: 0.0003
+min_lr_ratio: 0.1
+weight_decay: 0.1
+grad_clip: 1.0
+eval_interval: 200
+eval_iters: 50
+save_interval: 200        # checkpoint frequently -- Colab sessions can die anytime
+log_interval: 20
+seed: 42
+amp: true                 # mixed precision (only takes effect on CUDA)
+out_dir: checkpoints       # override with --out_dir, e.g. a mounted Drive path
+data_dir: data/bin         # overridden automatically by nepali/train/train.py

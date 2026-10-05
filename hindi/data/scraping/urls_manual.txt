@@ -1,0 +1,13 @@
+# One article URL per line. Lines starting with # are ignored.
+#
+# Sources are restricted to sites whose robots.txt does not explicitly
+# disallow ClaudeBot / anthropic-ai / Claude-Web -- amarujala.com,
+# bhaskar.com, bbc.com (bbc.co.uk too), and hindi.news18.com all name
+# Anthropic's crawlers explicitly as disallowed, so they are excluded here
+# even though this custom scraper's user-agent isn't literally "ClaudeBot".
+#
+# Compliant sources used by discover_urls.py:
+#   https://www.patrika.com/       (robots.txt explicitly ALLOWS ClaudeBot/anthropic-ai)
+#   https://www.jagran.com/        (robots.txt: User-agent: * / Allow: /)
+#   https://hi.wikisource.org/     (permissive; public-domain Hindi books/essays)
+# Populated automatically by discover_urls.py -- run it rather than editing by hand.

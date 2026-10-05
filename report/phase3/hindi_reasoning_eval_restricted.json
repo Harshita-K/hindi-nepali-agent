@@ -1,0 +1,146 @@
+{
+  "mode": "answer_restricted",
+  "temperature": null,
+  "seed": null,
+  "pretrained": {
+    "overall_accuracy": 0.32125,
+    "n_examples": 800,
+    "n_skipped_fewer_than_2_candidates": 0,
+    "accuracy_by_task_type": {
+      "direct": 0.36684782608695654,
+      "transitive": 0.2511013215859031,
+      "multihop": 0.3170731707317073
+    },
+    "accuracy_by_attribute": {
+      "height": 0.30798479087452474,
+      "age": 0.3,
+      "quantity": 0.371900826446281,
+      "price": 0.33974358974358976
+    }
+  },
+  "finetuned": {
+    "overall_accuracy": 0.22,
+    "n_examples": 800,
+    "n_skipped_fewer_than_2_candidates": 0,
+    "accuracy_by_task_type": {
+      "direct": 0.11684782608695653,
+      "transitive": 0.2643171806167401,
+      "multihop": 0.35609756097560974
+    },
+    "accuracy_by_attribute": {
+      "height": 0.23574144486692014,
+      "age": 0.2423076923076923,
+      "quantity": 0.1652892561983471,
+      "price": 0.1987179487179487
+    }
+  },
+  "examples_finetuning_fixed": [
+    {
+      "prompt": "पता है कि पेन की मात्रा, चश्मा की मात्रा से ज़्यादा है, और चश्मा की मात्रा, पंखा की मात्रा से ज़्यादा है। इनमें सबसे कम मात्रा किसकी है, बताइए। उत्तर:",
+      "answer": "पंखा",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "पंखा",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "पता है कि पेन की कीमत, चश्मा की कीमत से ज़्यादा है, और चश्मा की कीमत, पंखा की कीमत से ज़्यादा है। इनमें सबसे कम कीमत किसकी है, बताइए। उत्तर:",
+      "answer": "पंखा",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "पंखा",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "पता है कि चश्मा की मात्रा, पंखा की मात्रा से ज़्यादा है, और पंखा की मात्रा, पेन की मात्रा से ज़्यादा है। इनमें सबसे कम मात्रा किसकी है, बताइए। उत्तर:",
+      "answer": "पेन",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "पेन",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "अगर सुरेश की उम्र 23 वर्ष हो और सीता की उम्र 23 वर्ष हो, तो किसकी उम्र ज़्यादा होगी? उत्तर:",
+      "answer": "दोनों बराबर हैं",
+      "pretrained_predicted": "सुरेश",
+      "finetuned_predicted": "दोनों बराबर हैं",
+      "task_type": "direct"
+    },
+    {
+      "prompt": "सुनीता की उम्र, राम की उम्र से ज़्यादा है। राम की उम्र, दीपा की उम्र से ज़्यादा है। सुनीता और दीपा में से किसकी उम्र कम है? उत्तर:",
+      "answer": "दीपा",
+      "pretrained_predicted": "सुनीता",
+      "finetuned_predicted": "दीपा",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "सीता की ऊँचाई, विकास की ऊँचाई से ज़्यादा है। विकास की ऊँचाई, दीपा की ऊँचाई से ज़्यादा है। सीता और दीपा में से किसकी ऊँचाई कम है? उत्तर:",
+      "answer": "दीपा",
+      "pretrained_predicted": "दोनों बराबर हैं",
+      "finetuned_predicted": "दीपा",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "पता है कि सुरेश की उम्र, राम की उम्र से ज़्यादा है, और राम की उम्र, विकास की उम्र से ज़्यादा है। इनमें सबसे कम उम्र किसकी है, बताइए। उत्तर:",
+      "answer": "विकास",
+      "pretrained_predicted": "राम",
+      "finetuned_predicted": "विकास",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "पता है कि चश्मा की मात्रा, पेन की मात्रा से ज़्यादा है, और पेन की मात्रा, पंखा की मात्रा से ज़्यादा है। इनमें सबसे कम मात्रा किसकी है, बताइए। उत्तर:",
+      "answer": "पंखा",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "पंखा",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "पेन की कीमत, चश्मा की कीमत से ज़्यादा है। चश्मा की कीमत, पंखा की कीमत से ज़्यादा है। पेन और पंखा में से किसकी कीमत ज़्यादा है? उत्तर:",
+      "answer": "पेन",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "पेन",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "पता है कि चश्मा की कीमत, पंखा की कीमत से ज़्यादा है, और पंखा की कीमत, पेन की कीमत से ज़्यादा है। इनमें सबसे कम कीमत किसकी है, बताइए। उत्तर:",
+      "answer": "पेन",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "पेन",
+      "task_type": "transitive"
+    }
+  ],
+  "examples_still_wrong_after_finetuning": [
+    {
+      "prompt": "अगर विकास की ऊँचाई 160 सेंटीमीटर हो और सुनीता की ऊँचाई 108 सेंटीमीटर हो, तो किसकी ऊँचाई कम होगी? उत्तर:",
+      "answer": "सुनीता",
+      "pretrained_predicted": "सुनीता",
+      "finetuned_predicted": "दोनों बराबर हैं",
+      "task_type": "direct"
+    },
+    {
+      "prompt": "पता है कि सुरेश की ऊँचाई, दीपा की ऊँचाई से ज़्यादा है, और दीपा की ऊँचाई, सुनीता की ऊँचाई से ज़्यादा है। इनमें सबसे ज़्यादा ऊँचाई किसकी है, बताइए। उत्तर:",
+      "answer": "सुरेश",
+      "pretrained_predicted": "सुनीता",
+      "finetuned_predicted": "दोनों बराबर हैं",
+      "task_type": "transitive"
+    },
+    {
+      "prompt": "राम की उम्र, सीता की उम्र से कम है। सीता की उम्र, सुरेश की उम्र से कम है। राम और सुरेश में से किसकी उम्र ज़्यादा है? उत्तर:",
+      "answer": "सुरेश",
+      "pretrained_predicted": "राम",
+      "finetuned_predicted": "दोनों बराबर हैं",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "पंखा की मात्रा, चश्मा की मात्रा से ज़्यादा है। चश्मा की मात्रा, पेन की मात्रा से ज़्यादा है। पंखा और पेन में से किसकी मात्रा ज़्यादा है? उत्तर:",
+      "answer": "पंखा",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "दोनों बराबर हैं",
+      "task_type": "multihop"
+    },
+    {
+      "prompt": "पंखा की कीमत, चश्मा की कीमत से कम है। चश्मा की कीमत, पेन की कीमत से कम है। पंखा और पेन में से किसकी कीमत कम है? उत्तर:",
+      "answer": "पंखा",
+      "pretrained_predicted": "चश्मा",
+      "finetuned_predicted": "दोनों बराबर हैं",
+      "task_type": "multihop"
+    }
+  ]
+}

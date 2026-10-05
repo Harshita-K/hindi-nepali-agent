@@ -1,0 +1,19 @@
+language: nepali
+wiki_code: ne              # dumps.wikimedia.org/newiki
+tesseract_lang: nep        # tesseract OCR language pack
+hf_dataset_configs:        # public corpora pulled via `datasets` library (source_type=downloaded)
+  - name: ai4bharat/IndicCorpV2
+    lang_field_value: npi_Deva
+  - name: oscar-corpus/OSCAR-2301
+    lang: ne
+target_total_tokens: 500_000_000   # likely not reachable for Nepali -- report actual and justify shortfall
+min_manual_fraction: 0.20
+min_devanagari_fraction: 0.6
+split_ratios:
+  train: 0.98
+  val: 0.01
+  test: 0.01
+tokenizer:
+  model_type: bpe
+  vocab_size: 8000
+random_seed: 42

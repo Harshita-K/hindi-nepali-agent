@@ -1,0 +1,8 @@
+{
+  "total_tokens": 6630400,
+  "total_nll_nats": 22971472.56640625,
+  "cross_entropy_nats": 3.4645681356187032,
+  "perplexity": 31.962653260599634,
+  "total_bytes": 63021969,
+  "bits_per_byte": 0.5258615381165125
+}
