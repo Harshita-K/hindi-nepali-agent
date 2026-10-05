@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Q6gOCxoh)
-
 # Language Models and Agents — Individual Project
 
 Two independent decoder-only Transformer LMs trained from scratch:
@@ -37,7 +35,7 @@ checkpoints you passed.
 ### Option A: Google Colab (recommended, no local setup)
 
 ```python
-!git clone https://github.com/CL3-410/individual-project-Harshita-K.git LMA
+!git clone https://github.com/Harshita-K/hindi-nepali-agent.git LMA
 %cd LMA
 !pip install -q sentencepiece pyyaml gradio
 
@@ -60,7 +58,7 @@ somewhere else in your Drive.
 ### Option B: local machine
 
 ```bash
-git clone https://github.com/CL3-410/individual-project-Harshita-K.git LMA
+git clone https://github.com/Harshita-K/hindi-nepali-agent.git LMA
 cd LMA
 pip install torch sentencepiece pyyaml gradio
 
@@ -125,12 +123,6 @@ volume; see `report/phase1/report.md` section 10 for the full reasoning):
   `hindi/finetune_output/` and `nepali/finetune_output/` alongside the
   pretrained `hindi/output/` and `nepali/output/`)
 
-**Before final submission:** confirm sharing permissions let graders open
-these without requesting access, and confirm the folder structure inside
-mirrors `hindi/data/{raw,processed,splits}/` and
-`nepali/data/{raw,processed,splits}/` (first link) / `hindi/output/`,
-`hindi/finetune_output/`, `nepali/output/`, and `nepali/finetune_output/`
-(second link) so it's navigable.
 
 ## Reproduction steps (Phase 1)
 
@@ -204,7 +196,7 @@ Run in a fresh Colab notebook (T4 GPU runtime recommended):
 
 ```python
 # 1. Get the code onto the Colab VM (either clone your repo, or upload a zip)
-!git clone <your-repo-url> LMA
+!git clone https://github.com/Harshita-K/hindi-nepali-agent.git LMA
 %cd LMA
 !pip install -q -r requirements.txt
 
